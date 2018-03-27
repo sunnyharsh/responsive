@@ -1,0 +1,532 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+.clearfix:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#container{
+    margin: 0 auto;
+}
+/***************************************** header css start**************************************/
+#header{
+    background-color: #202020;
+    width: 100%;
+}
+#header .topbar_container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#header .site_name{
+
+}
+#header .site_name h2{
+    color: white;
+}
+#header .nav{
+   
+}
+#header .nav ul{
+    list-style: none;
+    margin-top: 21px;
+    margin-left: 198px;
+}
+#navbar{
+    z-index: 120;
+}
+#header .nav ul li{
+    display: inline-block;
+    /* padding: 7px 33px 0px 0px; */
+}
+#header .nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    /* background-color: #E25050; */
+    padding: 12px 10px;
+    margin-right: 3px;
+}
+#header .nav ul li:first-child a{
+    background-color: #E25050;
+}
+#dropdown{
+   
+}
+#dropdown .drpdown_button{
+    display: none;
+}
+#dropdown .menu-btn{
+    position: absolute;
+    right: 27px;
+    width: 40px;
+    border: transparent;
+    background-color: transparent;
+    top: 15px;
+}
+   
+input[value="show-menu"]{
+   
+    position: absolute;
+    right: 26px;
+    width: 35px;
+    top: 1px;
+    height: 38px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+  
+}
+#dropdown .line{
+    display: block;
+    width: 25px;
+    border: 2px solid red;
+    margin-bottom: 2px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ media query code of header start@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@media(max-width:1024px){
+    #header .site_name{
+        margin-left: 11px;
+    }
+    #header .site_name h2{
+        font-size: 17px;
+    }
+    #header .nav ul{
+        margin: 14px 0px 0px 8px;
+    }
+    #header .nav ul li a{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:768px){
+    #header .site_name{
+        margin-left: 11px;
+    }
+    #header .site_name h2{
+        font-size: 14px;
+        margin: 13px 0px;
+    }
+    #header .nav{
+
+    }
+    #header .nav ul{
+        padding-bottom: 12px;
+    }
+    #header .nav ul li a{
+        font-size: 12px;
+        padding: 5px 3px;
+        margin-right: 2px;
+    }
+    @media(max-width:640px){
+        #dropdown .drpdown_button{
+            display: block;
+        }
+        #header .nav{
+            display: none;
+        }
+        .showDropdown{
+            display: block;
+        }
+        .show{
+            display: block;
+        }
+        #navbar{
+            position: absolute;
+            top: 42px;
+            background-color: #686458;
+            width: 100%;
+        }
+        #navbar ul{
+            text-align: center;
+            list-style: none;
+            margin: 14px 0px 0px 0px
+        }
+        #navbar ul li{
+            margin: 0px 0px 12px 0px;
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+  
+  
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ media query code of header start@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/***************************************** header css start**************************************/
+
+
+/******************************************* banner start**********************************************/
+#coursal {
+    width: 500%;
+    position: absolute;
+    animation: coursal 20s infinite linear;
+}
+#coursal .slide{
+    width: 20%;
+    float: left;
+}
+#coursal .slide img{
+    width: 100%;
+    height: 450px;
+}
+
+@keyframes coursal {
+    0% {
+        left: 0%;
+    }
+    5%,25% {
+        left: -100%;
+    }
+    30%,50% {
+        left: -200%;
+    }
+    55%,75% {
+        left: -300%;
+    }
+    80%,100% {
+        left: -400%;
+    }
+}
+/******************************************* banner end **********************************************/
+
+/************************************* fitness time start*********************************************/
+#fitness_time{
+    width:100%;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:565px;
+    text-align: center;
+}
+#fitness_time .heading span{
+    font-size: 32px;
+    font-weight: 900;
+}
+#fitness_time .heading span:nth-child(2){
+    color: red;
+}
+#fitness_time .heading i{
+    color: #BBBBBB;
+}
+#types{
+    top:12px;
+    width: 85%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 53px;
+}
+#types .section{
+    width: 20%;
+}
+#types .section strong{
+    font-size:19px;
+} 
+#types .section p{
+    text-align: start;
+    color: #777777;
+}
+
+/***************************************** mediq query **********************************/
+@media(max-width:992px){
+    #types{
+        width: 60%;
+        word-wrap: wrap;
+    }
+    #types .section{
+        width: 40%;
+    }
+    #types .section p{
+        font-size: 12px;
+    }
+    #types .section strong{
+        font-size:13px;
+    }
+}
+@media(max-width:768px){
+    #types{
+        width: 63%;
+       justify-content: center;
+    }
+    #types .section{
+        width: 80%;
+
+    }
+}
+@media(max-width:600px){
+    #fitness_time .heading span{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    #fitness_time .heading span{
+        font-size: 17px;
+        font-weight: 600;
+    }   
+
+}
+/***************************************** mediq query **********************************/
+/************************************* fitness time end*********************************************/
+
+/*************************************** super trends start**********************************************/
+#super_trends{
+    position: absolute;
+    top: 840px;
+    background-image: url('../images/background.jpg');
+    width: 100%;
+    height: 550px;
+    background-size: 100% auto;
+    z-index: -1;
+    text-align: center;
+}
+#super_trends .heading{
+    text-align: center;
+    margin-top: 80px;
+}
+
+#super_trends .heading h1{
+    color: white;
+}
+#super_trends .line{
+    display: block;
+    width: 100px;
+    border: 0.5px solid white;
+    margin-bottom: 2px;
+    margin-left: 46%;
+}
+#trainers{
+    width: 85%;
+    height: 309px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#trainers img{
+    width: 241px;
+    height: 241px;
+}
+#trainers .about{
+    width: 241px;
+    margin: -4px 0px 0px 0px;
+    background-color: white;
+} 
+#trainers .about h3{
+    text-align: start;
+    margin: 0px;
+    padding: 12px 0px 12px 12px;
+}
+#trainers .about span{
+    color: rgb(199, 199, 199);
+}
+#trainers .trainer_text{
+    width: 241px;
+    margin: -309px 0px 0px 0px;
+    position: absolute;
+    background-color: white;
+    text-align: start;
+    padding: 17px 0px 0px 0px;
+    display: none;
+    transition: 2s;
+    transform: translateX(-241px); 
+}
+#trainers .trainer_pic img:hover #trainers .trainer_text{
+  display: block;
+  transform: translateX(241px); 
+}
+
+#trainers .trainer_text p{
+   color: black;
+   margin: 41px 4px 0px 4px;
+   padding: 0px 0px 110px 0px;
+}
+#trainers .trainer_text strong{
+  margin: 0px 0px 0px 10px;
+}
+#trainers .trainer_text span{
+    color:#C0C0C0;
+    padding: 0px 0px 0px 10px;
+}
+/***************************************** media query super trends start*******************************************/
+@media(max-width:1200px){
+    #trainers img{
+        width: 200px;
+        height: 200px;
+    }
+    #trainers .about{
+        width: 200px;
+    }
+}
+@media(max-width:992px){
+   
+    #super_trends{
+        top: 961px;
+        height: 1350px;
+    }
+    #trainers{
+        width: 200px;
+        height: 100px;    
+    }
+    #trainers .img_trainers{
+        width: 60%;
+        padding-bottom: 12px;
+    }
+    #trainers .about{
+        width: 200px;
+        margin: -4px 0px 0px 0px;
+    } 
+}
+@media(max-width:768px){
+    #super_trends{
+        top: 1010px;
+        height: 1356px;
+    }
+    #super_trends .heading h1{
+        font-size: 24px;
+    }
+    #super_trends .heading span{
+        margin-left: 39%;
+    }
+}
+@media(max-width:420px){
+    #super_trends{
+        top: 1093px;
+    }
+}
+/***************************************** media query super trends end*******************************************/
+/*************************************** super trends end**********************************************/
+
+/**************************************** our gallery start **************************************************/
+#gallery{
+    position: absolute;
+    top: 1454px;
+    text-align: center;
+    width: 100%;
+}
+#gallery .gallery_text{
+    width: 48%;
+    align-content: center;
+    text-align: center;
+    margin-left: 25%;   
+}
+#gallery .gallery_heading h3{
+    font-weight: bold;
+    font-size: 27px;
+}
+#gallery .gallery_text p{
+    font-size: 14px;
+    color:#C0C0C0;
+}
+#gallery .gallery_pic{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+#gallery .gallery_pic img{
+    height: 159px;
+    width: 250px;
+    margin: 0px 0px 30px 0px;
+    transition-duration: 1s;
+}
+#gallery .gallery_pic .first_img:hover img{
+    transform: translateY(-51px);
+}
+/*********************************** gallery media query start ****************************************/
+@media(max-width:1200px){
+    #gallery .gallery_pic{
+        width: 63%;
+    }
+}
+@media(max-width:992px){
+    #gallery{
+        top: 2328px;
+    }
+    #gallery .gallery_pic{
+        width: 73%;
+    }
+}
+@media(max-width:768px){
+    #gallery{
+        top: 2428px;
+    }
+    #gallery .gallery_pic{
+        width: 32%;
+        justify-content: center;
+    }
+}
+@media(max-width:420px){
+    #gallery{
+        top: 2528px;
+    }
+}
+/*********************************** gallery media query end ****************************************/
+/**************************************** our gallery end *********************************************/
+
+
+/********************************* pricing and plans start ******************************************/
+#pricing_plans{
+    top: 1996px;
+    position: absolute;
+    width: 100%;
+    background-color: #E25050;
+}
+#pricing_plans h3{
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+#pricing_plans .line{
+    display: block;
+    width: 100px;
+    border: 0.5px solid white;
+    margin-left: 46%;
+    margin-top:27px;
+}
+#price_type{
+    height: 120px;
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+}
+.section_1{
+    background-color: #D14343;
+}
+#price_type .category{
+    height: 120px;
+    width: 50%;
+    background-color: 
+}
+/*************************** media query of pricing and plans start*****************/
+@media(max-width:1200px){
+    #pricing_plans{
+        top: 2384px;
+    }
+}
+@media(max-width:992px){
+    #pricing_plans{
+        top: 3279px;
+    }
+}
+@media(max-width:768px){
+    #pricing_plans{
+        top: 4148px;
+    }
+    
+}
+@media(max-width:420px){
+    #pricing_plans{
+        top: 4287px;
+    }
+}
+/************************* media query of pricing and plans end*****************/
+/********************************* pricing and plans end ******************************************/
